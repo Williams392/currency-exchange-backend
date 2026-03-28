@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "69c4d5a37278d416e3d574f8"
+  },
+  "name": "Tasas de Cambio",
+  "key_name": "EXCHANGE_RATES",
+  "description": "Gestión de tasas de cambio",
+  "is_active": true
+},
+{
+  "_id": {
+    "$oid": "69c4d5a37278d416e3d574f9"
+  },
+  "name": "Solicitudes de Cambio",
+  "key_name": "EXCHANGE_REQUESTS",
+  "description": "Gestión de solicitudes de cambio",
+  "is_active": true
+},
+{
+  "_id": {
+    "$oid": "69c4d5a37278d416e3d574fa"
+  },
+  "name": "Usuarios",
+  "key_name": "USERS",
+  "description": "Gestión de usuarios",
+  "is_active": true
+}]

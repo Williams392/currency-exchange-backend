@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "69c4d5807278d416e3d574f5"
+  },
+  "rol": "ADMIN",
+  "description": "Administrador del sistema con acceso completo"
+},
+{
+  "_id": {
+    "$oid": "69c4d5807278d416e3d574f6"
+  },
+  "rol": "USER",
+  "description": "Usuario estándar con permisos limitados"
+}]

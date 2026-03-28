@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "69c74cd7048e21f55bca1273"
+  },
+  "username": "Admin",
+  "password": "$2b$10$5JX2m/efH6k16Zzhg4WL/eJHsRNunDGVS5LbPVDfja/5A.vDR/IEG",
+  "first_name": "Admin",
+  "last_name": "Sistema",
+  "email": "admin123456@gmail.com",
+  "is_active": true,
+  "last_connection": null,
+  "role_id": {
+    "$oid": "69c4d5807278d416e3d574f5"
+  },
+  "createdAt": {
+    "$date": "2026-03-28T03:36:55.478Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-28T03:36:55.478Z"
+  },
+  "__v": 0
+}]

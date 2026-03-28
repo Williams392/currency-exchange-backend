@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "69c4d3237278d416e3d574eb"
+  },
+  "key_name": "VIEW",
+  "description": "Ver información"
+},
+{
+  "_id": {
+    "$oid": "69c4d3237278d416e3d574ec"
+  },
+  "key_name": "CREATE",
+  "description": "Crear registros"
+},
+{
+  "_id": {
+    "$oid": "69c4d3237278d416e3d574ed"
+  },
+  "key_name": "UPDATE",
+  "description": "Actualizar registros"
+},
+{
+  "_id": {
+    "$oid": "69c4d3237278d416e3d574ee"
+  },
+  "key_name": "DELETE",
+  "description": "Eliminar registros"
+}]
