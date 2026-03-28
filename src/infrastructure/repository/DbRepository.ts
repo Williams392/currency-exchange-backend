@@ -81,7 +81,7 @@ export class DbRepository implements IDbRepository {
     let users = await this.userModel
       .find(query)
       .populate('role_id')
-      .sort({ createdAt: sortOrder })
+      //.sort({ createdAt: sortOrder })
       .skip(skip)
       .limit(limit)
       .lean();
