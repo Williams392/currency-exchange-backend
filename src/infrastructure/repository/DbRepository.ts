@@ -74,14 +74,11 @@ export class DbRepository implements IDbRepository {
     const query: Record<string, any> = {};
     if (email)                   query.email     = { $regex: email, $options: 'i' };
     if (is_active !== undefined) query.is_active = is_active;
-
     const skip      = (page - 1) * limit;
-    const sortOrder = order === 'ASC' ? 1 : -1;
 
     let users = await this.userModel
       .find(query)
       .populate('role_id')
-      //.sort({ createdAt: sortOrder })
       .skip(skip)
       .limit(limit)
       .lean();
@@ -200,7 +197,6 @@ export class DbRepository implements IDbRepository {
     const [data, total] = await Promise.all([
       this.exchangeRequestModel
         .find(query)
-        .sort({ createdAt: sortOrder })
         .skip(skip)
         .limit(limit)
         .lean(),
