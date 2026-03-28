@@ -8,7 +8,8 @@ export default registerAs('app', () => ({
     env: process.env.NODE_ENV || 'development',
   },
   db: {
-    uri: process.env.MONGO_URI || 'mongodb://localhost:27017/currency_exchange_db',
+    uri: process.env.MONGO_URI ||
+      `mongodb://${process.env.MONGO_USERNAME}:${encodeURIComponent(String(process.env.MONGO_PASSWORD))}@${process.env.MONGO_HOST}:${process.env.MONGO_PORT}/${process.env.MONGO_DB}?authSource=admin`,
   },
   jwt: {
     secret: process.env.JWT_SECRET || 'default_secret',

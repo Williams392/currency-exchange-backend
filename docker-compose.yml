@@ -12,13 +12,19 @@ services:
     environment:
       NODE_PORT: 7000
       NODE_ENV: production
-      MONGO_URI: mongodb://mongodb:27017/currency_exchange_db
+      MONGO_HOST: mongodb
+      MONGO_PORT: 27017
+      MONGO_DB: currency_exchange_db
+      MONGO_USERNAME: admin
+      MONGO_PASSWORD: secret123      
       JWT_SECRET: super_secret_key_for_test
-      JWT_EXPIRATION_TIME: 3600
-      MAIL_HOST: smtp.gmail.com
-      MAIL_PORT: 587
-      MAIL_USER: tu_email@gmail.com
-      MAIL_PASS: tu_password
+      JWT_EXPIRATION_TIME: 900000
+      EMAIL_HOST: smtp.gmail.com
+      EMAIL_PORT: 587
+      EMAIL_USER: tu_email@gmail.com
+      EMAIL_PASSWORD: tu_password
+      EMAIL_FROM: "Casa de Cambio Digital"
+      RATES_URL: https://api.test.cambioseguro.com/api/v1.1/config/rates
     depends_on:
       - mongodb
 
@@ -29,6 +35,8 @@ services:
     ports:
       - "27017:27017"
     environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: secret123
       MONGO_INITDB_DATABASE: currency_exchange_db
     volumes:
       - mongo_data:/data/db
